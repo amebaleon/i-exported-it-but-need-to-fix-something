@@ -1,0 +1,9 @@
+{
+  "version": 1, "project_id": "mock-project", "sequence_id": "mock-sequence", "duration_frames": 720,
+  "settings": {"codec":"h264","width":192,"height":108,"fps":"24","preset_revision":"medium-sdr-v1"},
+  "audio_revision":"mix-v1", "global_effects":[], "dependencies":"frame_local",
+  "items":[
+    {"id":"clip","start":0,"end":720,"layer":0,"content":{"kind":"clip","source_id":"camera-a","media_revision":"mock-media-v1","source_in":0},"effects":[]},
+    {"id":"title","start":264,"end":384,"layer":1,"content":{"kind":"caption","text":"제목","style_revision":"style-v1"},"effects":[]}
+  ]
+}

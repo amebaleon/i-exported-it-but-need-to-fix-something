@@ -1,0 +1,18 @@
+[package]
+name = "incremental-export"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "Verified partial re-export of closed-GOP H.264 MP4 video"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+num-rational = "0.4"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+tempfile = "3"
+
+[target.'cfg(windows)'.dev-dependencies]
+windows-sys = { version = "0.61", features = ["Win32_System_JobObjects", "Win32_System_Threading", "Win32_Security"] }
